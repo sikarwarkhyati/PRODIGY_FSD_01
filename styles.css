@@ -1,0 +1,123 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent navbar on page load */
+    padding: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #ff6347; /* Change color on hover */
+  }
+  
+  /* When scrolled, change background and add shadow */
+  .scrolled {
+    background-color: #1a1a1a; /* Darker background when scrolled */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on scroll */
+  }
+  
+  /* Section Styling */
+  .section {
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .section h1, .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .section p, .section ul {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  #home {
+    background-color: #f7f7f7;
+  }
+  
+  #about {
+    background-color: #eaeaea;
+  }
+  
+  #services {
+    background-color: #d7d7d7;
+  }
+  
+  #portfolio {
+    background-color: #c7c7c7;
+  }
+  
+  #contact {
+    background-color: #b7b7b7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      background-color: #333;
+      padding: 10px;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  
+    .section {
+      font-size: 1.2rem;
+    }
+  
+    .section h1, .section h2 {
+      font-size: 2rem;
+    }
+  
+    .section p, .section ul {
+      font-size: 1rem;
+    }
+  }
+  
+  
